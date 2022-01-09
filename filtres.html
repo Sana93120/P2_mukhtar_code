@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtres</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+        *{
+            padding: 0;
+            margin: 0;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: "raleway", sans-serif;
+        }
+
+        p{
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .filtres{
+            display: flex;
+            align-items: center;
+        }
+
+
+        .button{
+            display: inline-flex;
+            height: 30px;
+            padding: 0%;
+            background:white;
+            border-radius: 100px;
+            border: solid 2px;
+            border-color: #F2F2F2;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            color: black;
+            margin-right: 30px;
+        }
+
+        .button_icon{
+            font-size: 12px;
+            background-color: #DEEBFF;
+            border-radius: 50px;
+            color: #0065FC;
+            display: inline-flex;
+            align-items: center;
+            padding: 0 20px;
+            height: 100%;
+            margin-right: 20px;
+        }
+
+        
+        .button_text{
+            display: inline-flex;
+            align-items: center;
+            height: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-right: 20px;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="filtres">
+
+        <p>Filtres</p>
+
+        <button type="button" class="button">
+            <span class="button_icon">
+                <i class="fa-solid fa-money-bill-wave"></i>
+            </span>
+            <span class="button_text">Économique</span>   
+        </button>
+
+
+        <button type="button" class="button">
+            <span class="button_icon">
+                <i class="fa-solid fa-child"></i>
+             </span>
+            <span class="button_text">Familial</span>
+        </button>
+
+
+        <button type="button" class="button">
+            <span class="button_icon">
+                <i class="fas fa-heart"></i>
+            </span>
+            <span class="button_text">Romantique</span>
+        </button>
+
+
+        <button type="button" class="button">
+            <span class="button_icon">
+                <i class="fa-solid fa-dog"></i>
+            </span>
+            <span class="button_text">Animaux autorisés</span>
+        </button>
+
+
+    </div>
+
+
+
+</body>
+</html>
+

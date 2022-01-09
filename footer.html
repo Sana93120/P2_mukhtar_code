@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;    
+            border: none;
+            box-sizing: border-box;
+        }
+        .bordure {
+            border: solid 1px red;
+        }
+
+        body{
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+        }
+
+        footer{
+            display: flex;
+            background-color: #F2F2F2;
+           /*position: absolute;*/
+            width: 100%;
+        }
+        footer .service1{
+            width: 33%;
+            
+        }
+
+        footer .service2{
+            width: 34%;
+        }
+        footer .service3{
+            width: 33%;
+        }
+
+        footer p{
+            color: gray;
+            margin: 25px 0 50px 0;  /* top, right, bottom, left */
+            line-height: 30px;
+        }
+        
+        footer h3{
+            font-weight: bold;
+            margin: 50px 0 25px 0  /* top, right, bottom, left */
+        }
+        
+
+    </style>
+
+
+</head>
+<body>
+
+    <footer class="bordure">
+
+        <div class="bordure service1">
+            <h3>À propos</h3>
+            <p>
+                Fonctionnement du site<br>
+                Conditions générales de ventes<br>
+                Données et confidentalité<br>
+            </p>
+        </div>
+
+        <div class="bordure service2">
+             <h3>Nos hébergements</h3>
+             <p> 
+                 Charte qualité<br>
+                 Soumettre votre hôtel<br>
+             </p>
+        </div>
+
+        <div class="bordure service3">
+             <h3>Assistance</h3>
+             <p>
+                 Centre d'aide<br>
+                 Nous contacter<br>
+             </p>
+        </div>
+
+    </footer>
+
+
+
+</body>
+    
+</html>

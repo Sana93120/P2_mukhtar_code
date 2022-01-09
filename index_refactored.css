@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;            
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+/*entete*/
+
+.page{
+    /* TODO ne pas mettre une largeur de page fixe */
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 50px; 
+}
+
+.bordure{
+    /*border: solid 1px red;*/
+}
+
+header nav {
+    /* flex-wrap: wrap; */
+    /* margin-left: 85%; */
+    margin-left: auto;
+    text-align: center;
+    display: flex;        
+}
+
+header nav a{
+    flex: 1;
+    text-decoration: none;
+    color: gray;
+    display: flex;
+    align-items: flex-end;
+    border-top: solid 2px transparent;
+    padding: 0px 30px;
+    margin: 0px 15px;
+    height: 70px;
+    
+}
+header nav a:hover {
+    color: #0065FC;
+    border-top: solid 2px #0065FC;
+}
+
+header .haut{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    /* text-align: left; */
+    width: 100px;
+    /* height: 50px; */
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+header h1{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.bas{
+    margin-top: 40px;
+
+}
+
+  h4{
+    margin-top: 10px;
+    /*color: gray;*/
+    margin-bottom: 13px;
+    font-weight: 400;
+    }
+
+    /*barre de recherche*/
+
+    form{
+        margin-bottom: 30px;
+    }
+    
+
+    input[type="text"]{
+        display: inline-block;
+        width: 235px;
+        height: 50px;
+        padding: 0 18px;
+        font-size: 17px;
+        font-family: 'Raleway', sans-serif;
+        border-top: solid 1px #f2f2f2;
+        border-bottom: solid 1px #f2f2f2;
+        font-weight: 700;
+    }
+    
+    input[type="submit"]{
+        display: inline-block;
+        border-radius: 0px 15px 15px 0px;
+        width: 130px;
+        height: 50px;
+        background: #0065FC;
+        color: whitesmoke;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    form .button_icon{
+        display: inline-block;
+        border-radius: 15px 0px 0px 15px;
+        background-color: #F2F2F2;
+        width: 52px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 18px;
+
+    }
+
+
+    /*Filtres*/
+
+    .filtres p{
+        font-weight: bold;
+        margin-right: 35px;
+        font-size: 20px;
+    }
+
+    .filtres{
+        display: flex;
+        align-items: center;
+    }
+
+
+    .button{
+        display: inline-flex;
+        height: 57px;
+        padding: 0%;
+        background:white;
+        border-radius: 100px;
+        border: solid 2px;
+        border-color: #F2F2F2;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        color: black;
+        margin-right: 20px;
+    }
+
+    .filtre_button_icon{
+        font-size: 12px;
+        background-color: #DEEBFF;
+        border-radius: 50px;
+        color: #0065FC;
+        display: inline-flex;
+        align-items: center;
+        padding: 0 15px;
+        height: 100%;
+        margin-right: 13px;
+    }
+
+    
+    .button_text{
+        display: inline-flex;
+        align-items: center;
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 20px;
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .icon-size{
+        font-size: 17px;
+    }
+
+    /*Informations*/
+
+    .informations{
+        display: inline-flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .informations i{
+
+        margin-right: 10px;
+        height: 25px;
+        border-radius: 50%;
+        width: 25px;
+        margin-top: 8px;
+    }
+
+    .informations p{
+        color: gray;
+        font-family: "raleway", sans-serif;
+        font-size: 14px;
+    }
+
+    
+
+    /*Hebergement et les plus populaire*/ 
+
+    .hebergement{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0 0 0;
+    }
+    .hebergement h2{
+        font-size: 1.3em;
+        width: fit-content;
+        margin: 0 0 25px 0;
+    }
+    .hebergement p{
+        letter-spacing: 0.1px;
+        font-size: 1.2em;
+        font-weight: 800;
+        cursor: pointer;
+        width: fit-content;
+        width: -moz-fit-content;    /*pour firefox*/
+        margin-top: 50px;
+    }
+    .hebergement p:hover{
+        width: fit-content;
+        border-bottom: 2px solid black;
+    }
+    .hebergement section{
+        background-color: #F2F2F2;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 67%;
+        padding: 40px;
+    }
+    .hebergement section .blocartes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 415px;
+    }
+    .hebergement section .blocartes div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hebergement section .blocartes div article{
+        border: 1px solid white;
+        border-radius: 15px;
+        height: 198px;
+        width: 30%;
+        background-color: white;
+        cursor: pointer;
+        box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: transform .2s;
+    }
+    .hebergement section .blocartes div article:hover {
+        -ms-transform: scale(1.019); 
+        -webkit-transform: scale(1.019); 
+        transform: scale(1.019); 
+      }
+    .hebergement section .blocartes div article:active{
+        box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    }
+    .blocartes article img{
+        height: 115px;
+        width: 98%;
+        margin-left: 2px;
+        margin-top: 2px;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+    }
+    .blocartes article h3{
+        font-size: 1em;
+        margin: 8px 0 4px 15px;
+    }
+    .description{
+        margin: 0 0 0 15px;
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+    .etoiles{
+        display: flex;
+        justify-content: flex-start;
+        margin: 7px 0 0 15px;
+        font-size: 0.8em;
+    }
+    .bleu{
+        color: #0065FC;
+    }
+    .grise{
+        color: gray;
+    }
+    aside{
+        background-color: #F2F2F2;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 30.1%;
+    }
+    .populaire{
+        all: unset;
+        font-family: inherit;
+        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 30px 0px 30px;
+    }
+    aside div{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4px 30px 5px 30px;
+    }
+    aside div article:hover {
+        -ms-transform: scale(1.019); /* IE 9 */
+        -webkit-transform: scale(1.019); /* Safari 3-8 */
+        transform: scale(1.019); 
+    }
+    aside div article:active{
+        box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    }
+    aside div article img{
+        width: 39%;
+        min-width: 39%;
+        height: 140px;
+        border-radius: 10px 0 0 10px;
+        object-fit: cover;
+    }
+    aside div article div{
+        all: unset;
+        font: inherit;
+        font-size: inherit;
+        padding-left: 20px;
+        height: auto;
+    }
+    aside div article{
+        border: 1px solid white;
+        background-color: white;
+        height: 152px;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+        padding: 4px;
+        display: flex;
+        transition: transform .2s;
+    }
+    aside div article div h3:nth-child(1){
+        font-size: 1em;
+        margin-top: 4px;
+        margin-bottom: 10px;
+        padding-right: 8px;
+    } 
+    aside div article div h3:nth-child(2){
+        font-size: 1em;
+        margin-top: 4px;
+        margin-bottom: 10px;
+    } 
+    aside div article div span{
+        all: unset;
+        font: inherit;
+        font-size: 0.9em;
+        font-weight: 400;
+        margin: 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .fa-chart-line{
+        font-size: 1.6em;
+    }
+    .etoiles_populaire{
+        all: unset;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 0.8em;
+        padding: 50px 0 2px 0;
+    }
+    .etoiles_populairemilieu{
+        box-sizing: border-box;
+        position: absolute;
+        all: unset;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 0.8em;
+        padding: 33px 0 2px 0;
+    }
+
+    /*Activités à Marseill*/
+
+    .activites{
+    height: 700px;
+    width: auto;
+    margin: 45px 0 0 0;
+    padding: 0;
+}
+.activites h2{
+    font-size: 1.3em;
+    margin: 70px 0 30px 0;
+}
+.blocactivites{
+    display: flex;
+    justify-content: space-between;
+}
+.premierblock, .deuxiemeblock{
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+}
+.grandecarte{
+    height: 442px;
+    width: 46%;
+}
+.doublecarte{
+    height: 444px;
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.doublecartepartie1{
+    height: 237px;
+}
+.doublecartepartie2{
+    height: 165px;
+}
+.grandecarte, .doublecartepartie1, .doublecartepartie2, .doublecarte2partie1, .doublecarte2partie2{
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 25%);
+    transition: transform .2s;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.grandecarte:hover, .doublecartepartie1:hover, .doublecartepartie2:hover, .doublecarte2partie1:hover, .doublecarte2partie2:hover{
+    -ms-transform: scale(1.019); 
+    -webkit-transform: scale(1.019);  
+    transform: scale(1.019); 
+    cursor: pointer;
+}
+.grandecarte:active, .doublecartepartie1:active, .doublecartepartie2:active, .doublecarte2partie1:active, .doublecarte2partie2:active{
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+.activites article img{
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.grandecarte img{
+    height: 87%;
+}
+.doublecartepartie1 img{
+    height: 183px;
+    object-fit: cover;    
+}
+.doublecartepartie2 img{
+    height: 104px;
+    object-fit: cover;
+}
+.activites article h3{
+    font-size: 1em;
+    margin: 17px 0 0 23px;
+}
+.doublecarte2partie1{
+    height: 194px;
+}
+.doublecarte2partie2{
+    height: 206px;
+}
+.doublecarte2partie1 img{
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+}
+.doublecarte2partie2 img{
+    height: 145px;
+    width: 100%;
+    object-fit: cover;
+}
+.doublecarte2partie1 h3, .doublecarte2partie2 h3{
+    margin-top: 14px;
+}
+
+
+
+
+        /*Footer*/
+
+        footer{
+            display: flex;
+            background-color: #F2F2F2;
+           /*position: absolute;*/
+           /* TODO ne pas mettre une largeur de page fixe */
+            width: 1440px;
+            font-size: 14px;
+            margin-top: 30%;
+            margin: 0 auto;
+            padding: 0 50px;
+        }
+    
+        footer .service1{
+            width: 33%;
+            
+        }
+    
+        footer .service2{
+            width: 34%;
+        }
+    
+        footer .service3{
+            width: 33%;
+        }
+    
+        footer p{
+            color: gray;
+            margin: 25px 0 50px 0;  /* top, right, bottom, left */
+            line-height: 30px;
+        }
+        
+        footer h3{
+            font-weight: bold;
+            margin: 50px 0 25px 0;  /* top, right, bottom, left */
+        }
+
+
+
+
+
+
+
+         /* Media queries */
+
+
+        /* Tablette */
+
+        @media (max-width: 1150px) {
+            /* TODO finir le comportement responsive côté tablette */
+            body {
+                color: green;
+            }
+        }  
+
+
+        /* Smartphone */
+        /* TODO BONUS finir le comportement responsive côté tablette */
+        @media (max-width: 760px) {
+            body {
+                color: red;
+            }
+            header .haut {
+                flex-direction: column;
+            }
+
+            header nav {
+                /* flex-wrap: wrap; */
+                /* margin-left: 85%; */
+                margin: 0;
+                
+                text-align: center;        
+            }
+           
+         }
+
+
