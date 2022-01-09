@@ -407,7 +407,6 @@ header h1{
     /*Activités à Marseill*/
 
     .activites{
-    height: 700px;
     width: auto;
     margin: 45px 0 0 0;
     padding: 0;
@@ -543,7 +542,7 @@ header h1{
 
 /* Tablette */
 
-@media all and (max-width: 1139px) {
+@media screen and (max-width: 1139px) {
 
     body{
         color: green;
@@ -561,11 +560,18 @@ header h1{
 }  
 
 
+@media screen and (min-width:1139px) {
+    .activites{
+        height: 700px;
+    }
+}
+
+
         
         /* Smartphone */
         
         
-@media all and (max-width: 667px) {
+@media screen and (max-width: 667px) {
             
     body {
        color: red;
@@ -666,6 +672,15 @@ header h1{
         margin: 10px 0 10px 0;
         justify-content: start;
         height: auto;
+    }
+
+    .activites{
+        flex-direction: column;
+        display: flex;
+    }
+
+    .blocactivites{
+        flex-direction: column;
     }
 
     footer{
