@@ -130,6 +130,12 @@ header h1{
 
     }
 
+    #button-search{
+        display: none;
+    }
+
+
+
 
     /*Filtres*/
 
@@ -251,11 +257,13 @@ header h1{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 415px;
+        margin-top: -25px;
+        
     }
     .hebergement section .blocartes div{
         display: flex;
         justify-content: space-between;
+        margin-top: 33px;
     }
     .hebergement section .blocartes div article{
         border: 1px solid white;
@@ -544,9 +552,6 @@ header h1{
 
 @media screen and (max-width: 1139px) {
 
-    body{
-        color: green;
-    }
 
     .page{
         width: 100%;
@@ -573,14 +578,11 @@ header h1{
         
 @media screen and (max-width: 667px) {
             
-    body {
-       color: red;
-     }
 
      .logo{
          margin-left: auto;
          margin-right: auto;
-         margin-top: -12px;
+         margin-top: 6px;
      }
 
     header .haut {
@@ -594,13 +596,35 @@ header h1{
 
     }
 
+    header nav a{
+        padding: 0px 19px;
+    }
+
     header nav a:hover{
         border-bottom: solid 2px #0065FC;
         border-top: none;
     }
 
+    
+
+
     .filtres{
         flex-wrap: wrap;
+    }
+
+    .filtres p{
+        width: 100%;
+    }
+
+    .button{
+        margin-top: 20px;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    input[type="submit"]{
+        display: none;
+
     }
 
     .hebergement{
@@ -611,8 +635,8 @@ header h1{
     aside{
         display: flex;
         width: fit-content;
-        margin-top: 245%;
         flex-direction: column;
+        order: -1;
     }
 
     .hebergement section{
@@ -640,13 +664,17 @@ header h1{
         justify-content: space-between;
         margin-top: 10%;
     }
-
+    
+    .hebergement section .blocartes div{
+        margin-top: 3px;
+    }
     .premierblock{
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
         align-items: center;
         flex: none;
+        width: auto;
         }
         
     
@@ -656,14 +684,19 @@ header h1{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: auto;
     }
     
      
     .grandecarte{
         max-width: 400px;
         width: 100%;
-        height: 100%;
+        height: 12rem;
         margin: 10px 0 10px 0;
+    }
+
+    .grandecarte img{
+        height: 73%;
     }
 
     .doublecarte{
@@ -673,6 +706,32 @@ header h1{
         justify-content: start;
         height: auto;
     }
+
+    .doublecartepartie1{
+        height: 186px;
+    }
+
+    .doublecartepartie1 img{
+        height: 135px;
+    }
+
+    .doublecartepartie2{
+        margin-top: 20px;
+        height: 188px;
+    }
+
+    
+    .doublecartepartie2 img{
+        height: 135px;
+    }
+
+    .doublecarte2partie1{
+        margin-bottom: 20px;
+    }
+
+    .doublecarte2partie2 {
+        height: 198px;
+        }
 
     .activites{
         flex-direction: column;
@@ -711,7 +770,7 @@ header h1{
     
 
     
-
+/*flex order*/
 
 
     
