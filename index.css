@@ -558,6 +558,8 @@ footer h3 {
     margin: 50px 0 25px 0;  /* top, right, bottom, left */
 }
 
+/*Fin desktop*/
+
 /* Media queries */
 /* Tablette */
 @media screen and (max-width: 992px) {
@@ -618,6 +620,7 @@ footer h3 {
     }
 
 }  
+/* Fin des media queries pour la tablette*/
         
 /* Smartphone */
 @media screen and (max-width: 667px) {
