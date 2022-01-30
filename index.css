@@ -192,6 +192,10 @@ form .button_icon{
     font-weight: bold;
 }
 
+.fa-search{
+    color: white;
+}
+
 .icon-size{
     font-size: 17px;
 }
@@ -802,6 +806,7 @@ footer h3 {
     .activites{
         flex-direction: column;
         display: flex;
+        margin-top: Opx;
     }
 
     .blocactivites{
