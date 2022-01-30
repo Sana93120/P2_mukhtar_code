@@ -806,7 +806,7 @@ footer h3 {
     .activites{
         flex-direction: column;
         display: flex;
-        margin-top: Opx;
+        margin-top: 0px;
     }
 
     .blocactivites{
